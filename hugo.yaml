@@ -1,0 +1,24 @@
+baseURL: https://archsec.dev/
+title: archsec.dev
+theme: hextra
+languageCode: en-us
+enableRobotsTXT: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+menu:
+  main:
+    - {name: AI Security, pageRef: /ai-security, weight: 1}
+    - {name: IAM, pageRef: /iam, weight: 2}
+    - {name: PAM, pageRef: /pam, weight: 3}
+    - {name: Product Dev, pageRef: /product-dev, weight: 4}
+    - {name: Search, weight: 5, params: {type: search}}
+
+params:
+  theme: {default: system, displayToggle: true}
+  navbar: {displayTitle: true, displayLogo: false, width: wide}
+  search: {enable: true, type: flexsearch}
+  footer: {enable: true, displayCopyright: true, displayPoweredBy: false}
