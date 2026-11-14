@@ -2,6 +2,7 @@
 title: "Product Dev"
 linkTitle: "Product Dev"
 description: "Vendor-neutral secure product development blueprints: shift-left DevSecOps, secrets scanning and SBOMs, STRIDE threat modeling, BOLA defense and tamper-proof audit logs."
+draft: = "false"
 weight: 4
 cascade:
   type: docs
