@@ -1,1 +1,1 @@
-# archsec-site readme
+# archsec-site readme details
