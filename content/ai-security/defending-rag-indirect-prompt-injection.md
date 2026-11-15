@@ -51,44 +51,41 @@ Early AI security focused heavily on **Direct Prompt Injection (Jailbreaking)**,
 In an IPI attack, a benign user asks a legitimate question—such as *"Summarize my unread emails"* or *"Check our vendor onboarding docs for payment terms."* Behind the scenes, the RAG retriever fetches a document poisoned by an external adversary. Hidden inside that document is a secondary payload instructing the LLM to ignore its original task, exfiltrate sensitive context from other retrieved chunks, or abuse connected tools on the user's behalf.
 
 ```mermaid
-flowchart LR
-    subgraph DataPlane ["Data Plane (Untrusted)"]
-        direction LR
-        Ext["External Sources:<br/>Emails, PDFs, Web, Wikis"] --> VDB[(Vector Database)]
-        VDB --> Poison["Poisoned Chunk<br/>[Hidden Payload]"]
+%%{init: {"theme":"base","flowchart":{"htmlLabels":true,"nodeSpacing":40,"rankSpacing":60,"padding":18,"curve":"basis"},"themeVariables":{"fontSize":"13px","fontFamily":"monospace","textColor":"#0f172a","primaryTextColor":"#0f172a","tertiaryTextColor":"#0f172a","lineColor":"#94a3b8","edgeLabelBackground":"#f1f5f9"}}}%%
+flowchart TB
+    subgraph DP["DATA PLANE (UNTRUSTED)"]
+        Ext["External sources<br/>emails, PDFs, web, wikis"] --> VDB[("Vector database")]
+        VDB --> Poison["Poisoned chunk<br/>hidden payload"]
     end
 
-    subgraph ControlPlane ["Control Plane (Trusted)"]
-        direction TB
-        Sys["System Prompt &<br/>Developer Rules"]
-        User["Benign User Query"]
+    subgraph CP["CONTROL PLANE (TRUSTED)"]
+        Sys["System prompt +<br/>developer rules"]
+        User["Benign user query"]
     end
 
-    subgraph Context ["LLM Context Window (Collapsed Flat Token Stream)"]
-        Merged["System Prompt +<br/>User Query +<br/>Poisoned Chunk"]
-    end
+    Poison -. "trust boundary violated" .-> Ctx
+    Sys --> Ctx
+    User --> Ctx
 
-    Poison -- "Trust Boundary<br/>Violation" --> Merged
-    Sys --> Merged
-    User --> Merged
+    Ctx["FLAT CONTEXT WINDOW<br/>system + query + poisoned chunk"] --> LLM["Privileged LLM"]
+    LLM -- "hijacked" --> Impact["Data exfiltration or<br/>unauthorized tool call"]
 
-    Merged --> LLM["Privileged LLM"]
-    LLM -- "Hijacked Execution" --> Impact["Data Exfiltration /<br/>Unauthorized Tool Call"]
-
-    %% High-Contrast Styling
-    classDef trusted fill:#0f2942,stroke:#38bdf8,stroke-width:2px,color:#f8fafc,font-weight:bold;
-    classDef neutral fill:#1e293b,stroke:#94a3b8,stroke-width:1.5px,color:#f8fafc;
-    classDef danger fill:#450a0a,stroke:#f87171,stroke-width:2.5px,color:#fef2f2,font-weight:bold;
-    classDef warning fill:#422006,stroke:#fbbf24,stroke-width:2.5px,color:#fefce8,font-weight:bold;
+    classDef trusted fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a;
+    classDef neutral fill:#f1f5f9,stroke:#64748b,stroke-width:2px,color:#0f172a;
+    classDef bad fill:#fee2e2,stroke:#dc2626,stroke-width:2.5px,color:#450a0a;
+    classDef merge fill:#fef3c7,stroke:#d97706,stroke-width:3px,color:#451a03;
+    classDef impact fill:#dc2626,stroke:#7f1d1d,stroke-width:2.5px,color:#ffffff;
 
     class Sys,User trusted;
     class Ext,VDB,LLM neutral;
-    class Poison,Impact danger;
-    class Merged warning;
+    class Poison bad;
+    class Ctx merge;
+    class Impact impact;
 
-    style DataPlane fill:#18181b,stroke:#ef4444,stroke-dasharray: 5 5,color:#fca5a5
-    style ControlPlane fill:#0f172a,stroke:#38bdf8,color:#7dd3fc
-    style Context fill:#1c1917,stroke:#f59e0b,color:#fcd34d
+    style DP fill:#fff5f5,stroke:#dc2626,stroke-width:2px,stroke-dasharray:6 4,color:#991b1b
+    style CP fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#1e40af
+
+    linkStyle default stroke:#94a3b8,stroke-width:2px
 ```
 
 Because the LLM treats the entire context window as a unified stream of instructions and context, **prompt engineering alone cannot solve indirect prompt injection**. Defending RAG pipelines requires treating the LLM as an untrusted, easily manipulated interpreter and building Zero-Trust boundaries around it.
