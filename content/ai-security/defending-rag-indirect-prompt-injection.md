@@ -1,5 +1,6 @@
 ---
 title: "Defending RAG Indirect Prompt Injection"
+linkTitle: "3. Defending RAG Indirect Prompt Injection"
 description: "How indirect prompt injection hijacks RAG pipelines, with real exploits like EchoLeak, plus a zero-trust architecture to block data exfiltration."
 slug: defending-rag-indirect-prompt-injection
 date: 2026-11-14T18:21:49+05:30

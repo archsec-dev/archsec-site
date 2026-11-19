@@ -5,6 +5,9 @@
 html.dark { --brand: #3B82F6; }
 
 .mermaid, .mermaid * { font-family: Inter, system-ui, sans-serif !important; }
+.mermaid .edgeLabel,
+.mermaid .edgeLabel span,
+.mermaid .edgeLabel p { color: #0f172a !important; background-color: #f1f5f9 !important; }
 
 main article blockquote {
   border-left: 4px solid var(--brand);
