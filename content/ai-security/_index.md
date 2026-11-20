@@ -16,7 +16,7 @@ LLM applications blur the line between instructions and data, so classic input-v
 
 Work through the guides in order. Each blueprint builds on the trust-boundary model from the previous layer.
 
-1. **OWASP Top 10 for LLMs & Agentic AI** *(infographic, coming soon)*: a visual attack map with code-level defenses.
+1. **[OWASP Top 10 for LLMs & Agentic AI](/ai-security/owasp-llm-agentic-top10-infographic/)** *(infographic)*: a visual attack map with code-level defenses.
 2. **[Zero-Trust RAG: Defend Against Indirect Prompt Injection](/ai-security/defending-rag-indirect-prompt-injection/)**: context isolation, cryptographic Spotlighting, classifier guardrails, and output sanitization.
 3. **[Securing Autonomous AI Agents: Threat Modeling & Zero-Trust Controls](/ai-security/securing-autonomous-ai-agents/)**: session taint tracking, memory write-barriers, SPIFFE workload identities, RFC 8693 token exchange, and microVM sandboxes.
 4. **[Securing the Model Context Protocol (MCP): Gateways, Auth & Tool Integrity](/ai-security/securing-model-context-protocol-mcp/)**: SHA-256 manifest pinning against rug pulls, OAuth 2.1 + RFC 8707 audience binding, canonical path guards, and an interactive gateway inspector.
