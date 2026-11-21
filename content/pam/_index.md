@@ -3,6 +3,7 @@ title: "PAM"
 linkTitle: "PAM"
 description: "Vendor-neutral PAM blueprints: zero standing privilege, break-glass workflows, ephemeral SSH and database certificates, non-human identity audits and Kubernetes access."
 weight: 3
+draft: = "false"
 cascade:
   type: docs
 ---

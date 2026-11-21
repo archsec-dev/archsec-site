@@ -18,6 +18,7 @@ menu:
     - {name: Search, weight: 5, params: {type: search}}
 
 params:
+  google-site-verification: "W4h1ni-YYcpfxCvDpmVc7_C4JWkDuPGq1iyy_DQuoe8"
   theme: {default: system, displayToggle: true}
   navbar: {displayTitle: true, displayLogo: false, width: wide}
   search: {enable: true, type: flexsearch}

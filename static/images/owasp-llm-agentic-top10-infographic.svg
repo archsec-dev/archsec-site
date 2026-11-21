@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="OWASP Top 10 for LLMs and Agentic AI: attack map and code-level defenses" xmlns:c2pa="http://c2pa.org/manifest">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#94A3B8"/></marker><linearGradient id="hg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1E1B4B"/><stop offset="1" stop-color="#0B1120"/></linearGradient></defs>
+<rect x="0" y="0" width="1200" height="1500" rx="0" fill="#0B1120" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1200" height="150" rx="0" fill="url(#hg)" stroke="none" stroke-width="1"/>
+<rect x="0" y="146" width="1200" height="4" rx="0" fill="#A78BFA" stroke="none" stroke-width="1"/>
+<text x="40" y="66" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="44" font-weight="800" fill="#FFFFFF" text-anchor="start" >OWASP Top 10 for LLMs &amp; Agentic AI</text>
+<text x="40" y="102" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="22" font-weight="400" fill="#94A3B8" text-anchor="start" >Visual attack map and code-level defenses</text>
+<rect x="40" y="118" width="236" height="24" rx="12" fill="none" stroke="#A78BFA" stroke-width="1.5"/>
+<text x="158" y="135" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="600" fill="#A78BFA" text-anchor="middle" >LLM Top 10 · 2026 edition</text>
+<rect x="290" y="118" width="262" height="24" rx="12" fill="none" stroke="#22D3EE" stroke-width="1.5"/>
+<text x="421" y="135" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="600" fill="#22D3EE" text-anchor="middle" >Agentic Top 10 · 2026 edition</text>
+<text x="40" y="190" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="700" fill="#A78BFA" text-anchor="start" letter-spacing="2">THE ATTACK MAP</text>
+<text x="1160" y="190" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="end" >dashed rose = untrusted   ·   blue = policy enforcement</text>
+<rect x="40" y="205" width="290" height="270" rx="12" fill="rgba(229,143,149,0.06)" stroke="#E58F95" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="56" y="230" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#E58F95" text-anchor="start" letter-spacing="1.5">UNTRUSTED INPUT</text>
+<rect x="56" y="244" width="258" height="44" rx="8" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<text x="68" y="263" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="600" fill="#E2E8F0" text-anchor="start" >User prompt</text>
+<text x="68" y="280" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="12" font-weight="600" fill="#E58F95" text-anchor="start" >LLM01</text>
+<rect x="56" y="300" width="258" height="44" rx="8" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<text x="68" y="319" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="600" fill="#E2E8F0" text-anchor="start" >Docs, email, web (RAG)</text>
+<text x="68" y="336" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="12" font-weight="600" fill="#E58F95" text-anchor="start" >LLM01 · ASI01</text>
+<rect x="56" y="356" width="258" height="44" rx="8" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<text x="68" y="375" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="600" fill="#E2E8F0" text-anchor="start" >Tool &amp; MCP output</text>
+<text x="68" y="392" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="12" font-weight="600" fill="#E58F95" text-anchor="start" >LLM10 · ASI02</text>
+<rect x="56" y="412" width="258" height="44" rx="8" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<text x="68" y="431" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="600" fill="#E2E8F0" text-anchor="start" >Other agents</text>
+<text x="68" y="448" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="12" font-weight="600" fill="#E58F95" text-anchor="start" >ASI07 · ASI08</text>
+<rect x="352" y="205" width="56" height="270" rx="10" fill="rgba(59,130,246,0.14)" stroke="#3B82F6" stroke-width="2.5"/>
+<text transform="translate(386,340) rotate(-90)" text-anchor="middle" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="700" fill="#3B82F6" letter-spacing="2">POLICY ENFORCEMENT</text>
+<line x1="330" y1="340" x2="350" y2="340" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#ah)"/>
+<line x1="408" y1="340" x2="468" y2="340" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="470" y="205" width="300" height="270" rx="12" fill="rgba(59,130,246,0.05)" stroke="#3B82F6" stroke-width="2.5"/>
+<text x="486" y="230" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#3B82F6" text-anchor="start" letter-spacing="1.5">LLM / AGENT</text>
+<rect x="486" y="244" width="268" height="44" rx="8" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<text x="498" y="263" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="600" fill="#E2E8F0" text-anchor="start" >Planner &amp; goals</text>
+<text x="498" y="280" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="12" font-weight="600" fill="#3B82F6" text-anchor="start" >ASI01 · LLM01</text>
+<rect x="486" y="300" width="268" height="44" rx="8" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<text x="498" y="319" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="600" fill="#E2E8F0" text-anchor="start" >Memory &amp; context</text>
+<text x="498" y="336" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="12" font-weight="600" fill="#3B82F6" text-anchor="start" >ASI06 · LLM08 · LLM09</text>
+<rect x="486" y="356" width="268" height="44" rx="8" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<text x="498" y="375" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="600" fill="#E2E8F0" text-anchor="start" >Tools, MCP &amp; code</text>
+<text x="498" y="392" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="12" font-weight="600" fill="#3B82F6" text-anchor="start" >ASI02 · ASI05 · LLM03</text>
+<rect x="486" y="412" width="268" height="44" rx="8" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<text x="498" y="431" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="600" fill="#E2E8F0" text-anchor="start" >Identity &amp; tokens</text>
+<text x="498" y="448" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="12" font-weight="600" fill="#3B82F6" text-anchor="start" >ASI03</text>
+<line x1="770" y1="340" x2="828" y2="340" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="830" y="205" width="330" height="270" rx="12" fill="rgba(229,143,149,0.06)" stroke="#E58F95" stroke-width="2"/>
+<text x="846" y="230" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="700" fill="#E58F95" text-anchor="start" letter-spacing="1.5">IMPACT</text>
+<rect x="846" y="244" width="298" height="44" rx="8" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<text x="858" y="263" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="600" fill="#E2E8F0" text-anchor="start" >Data exfiltration</text>
+<text x="858" y="280" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="12" font-weight="600" fill="#E58F95" text-anchor="start" >LLM02 · LLM08 · LLM10</text>
+<rect x="846" y="300" width="298" height="44" rx="8" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<text x="858" y="319" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="600" fill="#E2E8F0" text-anchor="start" >Unauthorized actions</text>
+<text x="858" y="336" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="12" font-weight="600" fill="#E58F95" text-anchor="start" >LLM03 · ASI02 · ASI03</text>
+<rect x="846" y="356" width="298" height="44" rx="8" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<text x="858" y="375" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="600" fill="#E2E8F0" text-anchor="start" >Remote code execution</text>
+<text x="858" y="392" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="12" font-weight="600" fill="#E58F95" text-anchor="start" >ASI05 · LLM10</text>
+<rect x="846" y="412" width="298" height="44" rx="8" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<text x="858" y="431" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="600" fill="#E2E8F0" text-anchor="start" >Runaway cost &amp; cascades</text>
+<text x="858" y="448" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="12" font-weight="600" fill="#E58F95" text-anchor="start" >LLM06 · ASI08</text>
+<rect x="40" y="492" width="1120" height="36" rx="10" fill="rgba(229,143,149,0.06)" stroke="#E58F95" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="600" y="515" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="600" fill="#E2E8F0" text-anchor="middle" >Also attacks from below: poisoned data, models, plugins &amp; MCP servers   →   LLM04 · LLM05 · ASI04</text>
+<line x1="620" y1="492" x2="620" y2="477" stroke="#E58F95" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="40" y="586" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="700" fill="#A78BFA" text-anchor="start" letter-spacing="2">OWASP TOP 10 FOR LLM APPLICATIONS</text>
+<text x="1160" y="586" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="end" >▲▼ rank change vs. 2025 list</text>
+<rect x="40" y="598" width="550" height="74" rx="10" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<rect x="40" y="598" width="5" height="74" rx="2" fill="#A78BFA" stroke="none" stroke-width="1"/>
+<rect x="56" y="610" width="70" height="22" rx="6" fill="none" stroke="#A78BFA" stroke-width="1.5"/>
+<text x="91" y="626" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#A78BFA" text-anchor="middle" >LLM01</text>
+<text x="138" y="627" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="17" font-weight="700" fill="#E2E8F0" text-anchor="start" >Prompt Injection</text>
+<text x="56" y="656" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8" text-anchor="start" >Isolate untrusted text, classify inputs, strip output URLs</text>
+<rect x="40" y="680" width="550" height="74" rx="10" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<rect x="40" y="680" width="5" height="74" rx="2" fill="#A78BFA" stroke="none" stroke-width="1"/>
+<rect x="56" y="692" width="70" height="22" rx="6" fill="none" stroke="#A78BFA" stroke-width="1.5"/>
+<text x="91" y="708" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#A78BFA" text-anchor="middle" >LLM02</text>
+<text x="138" y="709" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="17" font-weight="700" fill="#E2E8F0" text-anchor="start" >Sensitive Information Disclosure</text>
+<text x="56" y="738" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8" text-anchor="start" >Redact PII before inference; ACL-filter retrieval</text>
+<rect x="40" y="762" width="550" height="74" rx="10" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<rect x="40" y="762" width="5" height="74" rx="2" fill="#A78BFA" stroke="none" stroke-width="1"/>
+<rect x="56" y="774" width="70" height="22" rx="6" fill="none" stroke="#A78BFA" stroke-width="1.5"/>
+<text x="91" y="790" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#A78BFA" text-anchor="middle" >LLM03</text>
+<text x="138" y="791" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="17" font-weight="700" fill="#E2E8F0" text-anchor="start" >Excessive Agency</text>
+<text x="56" y="820" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8" text-anchor="start" >Least-privilege tool scopes; human approval for writes</text>
+<text x="576" y="791" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="700" fill="#34D399" text-anchor="end" >▲3</text>
+<rect x="40" y="844" width="550" height="74" rx="10" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<rect x="40" y="844" width="5" height="74" rx="2" fill="#A78BFA" stroke="none" stroke-width="1"/>
+<rect x="56" y="856" width="70" height="22" rx="6" fill="none" stroke="#A78BFA" stroke-width="1.5"/>
+<text x="91" y="872" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#A78BFA" text-anchor="middle" >LLM04</text>
+<text x="138" y="873" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="17" font-weight="700" fill="#E2E8F0" text-anchor="start" >Supply Chain</text>
+<text x="56" y="902" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8" text-anchor="start" >Pin and verify models by hash/signature; keep an SBOM</text>
+<text x="576" y="873" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="700" fill="#94A3B8" text-anchor="end" >▼1</text>
+<rect x="40" y="926" width="550" height="74" rx="10" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<rect x="40" y="926" width="5" height="74" rx="2" fill="#A78BFA" stroke="none" stroke-width="1"/>
+<rect x="56" y="938" width="70" height="22" rx="6" fill="none" stroke="#A78BFA" stroke-width="1.5"/>
+<text x="91" y="954" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#A78BFA" text-anchor="middle" >LLM05</text>
+<text x="138" y="955" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="17" font-weight="700" fill="#E2E8F0" text-anchor="start" >Data &amp; Model Poisoning</text>
+<text x="56" y="984" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8" text-anchor="start" >Verify data provenance; quarantine new ingestion</text>
+<text x="576" y="955" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="700" fill="#94A3B8" text-anchor="end" >▼1</text>
+<rect x="610" y="598" width="550" height="74" rx="10" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<rect x="610" y="598" width="5" height="74" rx="2" fill="#A78BFA" stroke="none" stroke-width="1"/>
+<rect x="626" y="610" width="70" height="22" rx="6" fill="none" stroke="#A78BFA" stroke-width="1.5"/>
+<text x="661" y="626" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#A78BFA" text-anchor="middle" >LLM06</text>
+<text x="708" y="627" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="17" font-weight="700" fill="#E2E8F0" text-anchor="start" >Unbounded Consumption</text>
+<text x="626" y="656" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8" text-anchor="start" >Rate limits, token quotas, max agent loop depth</text>
+<text x="1146" y="627" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="700" fill="#34D399" text-anchor="end" >▲4</text>
+<rect x="610" y="680" width="550" height="74" rx="10" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<rect x="610" y="680" width="5" height="74" rx="2" fill="#A78BFA" stroke="none" stroke-width="1"/>
+<rect x="626" y="692" width="70" height="22" rx="6" fill="none" stroke="#A78BFA" stroke-width="1.5"/>
+<text x="661" y="708" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#A78BFA" text-anchor="middle" >LLM07</text>
+<text x="708" y="709" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="17" font-weight="700" fill="#E2E8F0" text-anchor="start" >Misinformation</text>
+<text x="626" y="738" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8" text-anchor="start" >Ground answers in sources; cite and verify claims</text>
+<text x="1146" y="709" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="700" fill="#34D399" text-anchor="end" >▲2</text>
+<rect x="610" y="762" width="550" height="74" rx="10" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<rect x="610" y="762" width="5" height="74" rx="2" fill="#A78BFA" stroke="none" stroke-width="1"/>
+<rect x="626" y="774" width="70" height="22" rx="6" fill="none" stroke="#A78BFA" stroke-width="1.5"/>
+<text x="661" y="790" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#A78BFA" text-anchor="middle" >LLM08</text>
+<text x="708" y="791" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="17" font-weight="700" fill="#E2E8F0" text-anchor="start" >Hidden Context Exposure</text>
+<text x="626" y="820" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8" text-anchor="start" >Keep secrets out of prompts; assume context leaks</text>
+<text x="1146" y="791" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="700" fill="#FBBF24" text-anchor="end" >renamed</text>
+<rect x="610" y="844" width="550" height="74" rx="10" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<rect x="610" y="844" width="5" height="74" rx="2" fill="#A78BFA" stroke="none" stroke-width="1"/>
+<rect x="626" y="856" width="70" height="22" rx="6" fill="none" stroke="#A78BFA" stroke-width="1.5"/>
+<text x="661" y="872" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#A78BFA" text-anchor="middle" >LLM09</text>
+<text x="708" y="873" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="17" font-weight="700" fill="#E2E8F0" text-anchor="start" >Vector &amp; Embedding Weaknesses</text>
+<text x="626" y="902" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8" text-anchor="start" >Tenant-scoped indexes; permission check at retrieval</text>
+<text x="1146" y="873" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="700" fill="#94A3B8" text-anchor="end" >▼1</text>
+<rect x="610" y="926" width="550" height="74" rx="10" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<rect x="610" y="926" width="5" height="74" rx="2" fill="#A78BFA" stroke="none" stroke-width="1"/>
+<rect x="626" y="938" width="70" height="22" rx="6" fill="none" stroke="#A78BFA" stroke-width="1.5"/>
+<text x="661" y="954" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#A78BFA" text-anchor="middle" >LLM10</text>
+<text x="708" y="955" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="17" font-weight="700" fill="#E2E8F0" text-anchor="start" >Improper Output Handling</text>
+<text x="626" y="984" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8" text-anchor="start" >Treat output as untrusted: validate schema, encode</text>
+<text x="1146" y="955" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="700" fill="#94A3B8" text-anchor="end" >▼5</text>
+<text x="40" y="1034" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="700" fill="#22D3EE" text-anchor="start" letter-spacing="2">OWASP TOP 10 FOR AGENTIC APPLICATIONS</text>
+<text x="1160" y="1034" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="end" >agents that plan, remember and act</text>
+<rect x="40" y="1046" width="550" height="74" rx="10" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<rect x="40" y="1046" width="5" height="74" rx="2" fill="#22D3EE" stroke="none" stroke-width="1"/>
+<rect x="56" y="1058" width="70" height="22" rx="6" fill="none" stroke="#22D3EE" stroke-width="1.5"/>
+<text x="91" y="1074" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#22D3EE" text-anchor="middle" >ASI01</text>
+<text x="138" y="1075" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="17" font-weight="700" fill="#E2E8F0" text-anchor="start" >Agent Goal Hijack</text>
+<text x="56" y="1104" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8" text-anchor="start" >Pin goals; verify each plan against user intent</text>
+<rect x="40" y="1128" width="550" height="74" rx="10" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<rect x="40" y="1128" width="5" height="74" rx="2" fill="#22D3EE" stroke="none" stroke-width="1"/>
+<rect x="56" y="1140" width="70" height="22" rx="6" fill="none" stroke="#22D3EE" stroke-width="1.5"/>
+<text x="91" y="1156" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#22D3EE" text-anchor="middle" >ASI02</text>
+<text x="138" y="1157" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="17" font-weight="700" fill="#E2E8F0" text-anchor="start" >Tool Misuse &amp; Exploitation</text>
+<text x="56" y="1186" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8" text-anchor="start" >Allow-list tools; validate arguments against schema</text>
+<rect x="40" y="1210" width="550" height="74" rx="10" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<rect x="40" y="1210" width="5" height="74" rx="2" fill="#22D3EE" stroke="none" stroke-width="1"/>
+<rect x="56" y="1222" width="70" height="22" rx="6" fill="none" stroke="#22D3EE" stroke-width="1.5"/>
+<text x="91" y="1238" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#22D3EE" text-anchor="middle" >ASI03</text>
+<text x="138" y="1239" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="17" font-weight="700" fill="#E2E8F0" text-anchor="start" >Identity &amp; Privilege Abuse</text>
+<text x="56" y="1268" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8" text-anchor="start" >Short-lived, task-scoped token per agent</text>
+<rect x="40" y="1292" width="550" height="74" rx="10" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<rect x="40" y="1292" width="5" height="74" rx="2" fill="#22D3EE" stroke="none" stroke-width="1"/>
+<rect x="56" y="1304" width="70" height="22" rx="6" fill="none" stroke="#22D3EE" stroke-width="1.5"/>
+<text x="91" y="1320" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#22D3EE" text-anchor="middle" >ASI04</text>
+<text x="138" y="1321" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="17" font-weight="700" fill="#E2E8F0" text-anchor="start" >Agentic Supply Chain</text>
+<text x="56" y="1350" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8" text-anchor="start" >Pin and sign tools, MCP servers and plugins</text>
+<rect x="40" y="1374" width="550" height="74" rx="10" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<rect x="40" y="1374" width="5" height="74" rx="2" fill="#22D3EE" stroke="none" stroke-width="1"/>
+<rect x="56" y="1386" width="70" height="22" rx="6" fill="none" stroke="#22D3EE" stroke-width="1.5"/>
+<text x="91" y="1402" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#22D3EE" text-anchor="middle" >ASI05</text>
+<text x="138" y="1403" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="17" font-weight="700" fill="#E2E8F0" text-anchor="start" >Unexpected Code Execution</text>
+<text x="56" y="1432" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8" text-anchor="start" >Run generated code in a sandbox or microVM</text>
+<rect x="610" y="1046" width="550" height="74" rx="10" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<rect x="610" y="1046" width="5" height="74" rx="2" fill="#22D3EE" stroke="none" stroke-width="1"/>
+<rect x="626" y="1058" width="70" height="22" rx="6" fill="none" stroke="#22D3EE" stroke-width="1.5"/>
+<text x="661" y="1074" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#22D3EE" text-anchor="middle" >ASI06</text>
+<text x="708" y="1075" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="17" font-weight="700" fill="#E2E8F0" text-anchor="start" >Memory &amp; Context Poisoning</text>
+<text x="626" y="1104" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8" text-anchor="start" >Validate memory writes; segment and expire memory</text>
+<rect x="610" y="1128" width="550" height="74" rx="10" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<rect x="610" y="1128" width="5" height="74" rx="2" fill="#22D3EE" stroke="none" stroke-width="1"/>
+<rect x="626" y="1140" width="70" height="22" rx="6" fill="none" stroke="#22D3EE" stroke-width="1.5"/>
+<text x="661" y="1156" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#22D3EE" text-anchor="middle" >ASI07</text>
+<text x="708" y="1157" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="17" font-weight="700" fill="#E2E8F0" text-anchor="start" >Insecure Inter-Agent Comms</text>
+<text x="626" y="1186" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8" text-anchor="start" >Authenticate and sign agent-to-agent messages</text>
+<rect x="610" y="1210" width="550" height="74" rx="10" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<rect x="610" y="1210" width="5" height="74" rx="2" fill="#22D3EE" stroke="none" stroke-width="1"/>
+<rect x="626" y="1222" width="70" height="22" rx="6" fill="none" stroke="#22D3EE" stroke-width="1.5"/>
+<text x="661" y="1238" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#22D3EE" text-anchor="middle" >ASI08</text>
+<text x="708" y="1239" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="17" font-weight="700" fill="#E2E8F0" text-anchor="start" >Cascading Failures</text>
+<text x="626" y="1268" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8" text-anchor="start" >Circuit breakers, step limits, blast-radius isolation</text>
+<rect x="610" y="1292" width="550" height="74" rx="10" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<rect x="610" y="1292" width="5" height="74" rx="2" fill="#22D3EE" stroke="none" stroke-width="1"/>
+<rect x="626" y="1304" width="70" height="22" rx="6" fill="none" stroke="#22D3EE" stroke-width="1.5"/>
+<text x="661" y="1320" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#22D3EE" text-anchor="middle" >ASI09</text>
+<text x="708" y="1321" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="17" font-weight="700" fill="#E2E8F0" text-anchor="start" >Human-Agent Trust Exploitation</text>
+<text x="626" y="1350" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8" text-anchor="start" >Show provenance; confirm high-risk actions</text>
+<rect x="610" y="1374" width="550" height="74" rx="10" fill="#111A2E" stroke="#1E293B" stroke-width="1"/>
+<rect x="610" y="1374" width="5" height="74" rx="2" fill="#22D3EE" stroke="none" stroke-width="1"/>
+<rect x="626" y="1386" width="70" height="22" rx="6" fill="none" stroke="#22D3EE" stroke-width="1.5"/>
+<text x="661" y="1402" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="13" font-weight="700" fill="#22D3EE" text-anchor="middle" >ASI10</text>
+<text x="708" y="1403" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="17" font-weight="700" fill="#E2E8F0" text-anchor="start" >Rogue Agents</text>
+<text x="626" y="1432" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="400" fill="#94A3B8" text-anchor="start" >Behavior monitoring with a tested kill switch</text>
+<rect x="0" y="1462" width="1200" height="38" rx="0" fill="#0F172A" stroke="none" stroke-width="1"/>
+<text x="40" y="1486" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="600" fill="#E2E8F0" text-anchor="start" >Assume the model will be fooled. Design so nothing important breaks.</text>
+<text x="1160" y="1486" font-family="Inter, 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="800" fill="#A78BFA" text-anchor="end" >archsec.dev</text>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo0MWE0OThmZC1jZTU4LTQ2MWEtYWQ4Yy01YTY4MGNlOGY2Y2UAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaKy12h8u0bS29ZM3POXVVj4AAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo2ZTMwMzY3Yy1kZjYyLTQ3MWUtOGNmOS01MDRmYWUxMzcwMzJscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoQY3IzLGj+PdP+J/f4jxYNwAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggG5Eq7A0iZDCNl8qUooWSqziBJizzya61swY/BCBUBDCkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaG6A2Q434qFxnLc5ISNudCMAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIF4N8AI+Dm0bF0JeiUfPiERVE9cHXs0zx33aJHbDMNg3ZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GXH6Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjQxYTQ5OGZkLWNlNTgtNDYxYS1hZDhjLTVhNjgwY2U4ZjZjZS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjQ1MTA2YjUwLTgyZTItNDYzNi1hZjEwLWYzMDA1MjFjMjY1ZnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCAbkSrsDSJkMI2XypSihZKrOIEmLPPJrrWzBj8EIFQEMKJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggG9I7uiPoRqUpSpRoIcrMA8KzdSuHr5LmMgB6VAz6D+uiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFgg1MQA0w1mRGlLgZ5hBq4QPW054LFdIZZeFOwjarVWkWN0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQOr+uDbCZ1tcVQRmjgSC8W/qWugoALd+CCc5pGti9BOpLYcbHPd93Iy4tTUr/obKBctA5N7esEKHxnKaxtuTt/s=</c2pa:manifest></metadata></svg>

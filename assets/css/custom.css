@@ -1,3 +1,18 @@
-:root { --brand:#2563EB; --ai:#7C3AED; --iam:#059669; --pam:#D97706; --prod:#0891B2; }
-.hextra-scrollbar a:hover { color: var(--brand); }
-article blockquote { border-left:4px solid var(--brand); background:rgba(37,99,235,.06); padding:12px 16px; border-radius:0 8px 8px 0; }
+:root {
+  --brand: #2563EB;
+  --ai: #7C3AED; --iam: #059669; --pam: #D97706; --prod: #0891B2;
+}
+html.dark { --brand: #3B82F6; }
+
+.mermaid, .mermaid * { font-family: Inter, system-ui, sans-serif !important; }
+.mermaid .edgeLabel,
+.mermaid .edgeLabel span,
+.mermaid .edgeLabel p { color: #0f172a !important; background-color: #f1f5f9 !important; }
+
+main article blockquote {
+  border-left: 4px solid var(--brand);
+  background: rgba(37, 99, 235, 0.06);
+  padding: 12px 16px;
+  border-radius: 0 8px 8px 0;
+}
+html.dark main article blockquote { background: rgba(59, 130, 246, 0.12); }
