@@ -20,7 +20,7 @@ Work through the guides in order. Each blueprint builds on the trust-boundary mo
 2. **[Zero-Trust RAG: Defend Against Indirect Prompt Injection](/ai-security/defending-rag-indirect-prompt-injection/)**: context isolation, cryptographic Spotlighting, classifier guardrails, and output sanitization.
 3. **[Securing Autonomous AI Agents: Threat Modeling & Zero-Trust Controls](/ai-security/securing-autonomous-ai-agents/)**: session taint tracking, memory write-barriers, SPIFFE workload identities, RFC 8693 token exchange, and microVM sandboxes.
 4. **[Securing the Model Context Protocol (MCP): Gateways, Auth & Tool Integrity](/ai-security/securing-model-context-protocol-mcp/)**: SHA-256 manifest pinning against rug pulls, OAuth 2.1 + RFC 8707 audience binding, canonical path guards, and an interactive gateway inspector.
-5. **PII Redaction Middleware for LLM APIs** *(coming soon)*: strip sensitive data before inference calls.
+5. **[PII Redaction Middleware for LLM APIs](/ai-security/pii-redaction-middleware-for-llm-apis)** - PII Redaction Middleware for LLM APIs: Strip Sensitive Data Before Inference Calls
 6. **Zero-Trust Architecture for Enterprise AI** *(coming soon)*: policy enforcement points and dual-identity audit logs.
 
 ## Published Blueprints
@@ -29,6 +29,7 @@ Work through the guides in order. Each blueprint builds on the trust-boundary mo
   {{< card link="/ai-security/defending-rag-indirect-prompt-injection/" title="1. Zero-Trust RAG vs. Indirect Prompt Injection" subtitle="How one poisoned email, PDF, or web page can hijack a RAG pipeline, and the 4-layer defense-in-depth architecture that stops it." >}}
   {{< card link="/ai-security/securing-autonomous-ai-agents/" title="2. Securing Autonomous AI Agents" subtitle="Threat modeling autonomous loops across identity, memory, and execution boundaries with RFC 8693 token exchange and deterministic policy gates." >}}
   {{< card link="/ai-security/securing-model-context-protocol-mcp/" title="3. Securing the Model Context Protocol (MCP)" subtitle="Defeating tool poisoning, schema rug pulls, OAuth audience replay, and path traversal with a Zero-Trust MCP Gateway + interactive lab." >}}
+  {{< card link="/ai-security/pii-redaction-middleware-llm-apis/" title="5. PII Redaction Middleware for LLM APIs" subtitle="Strip names, emails, addresses, and secrets before inference using two-stage hybrid detection and a shared RedactionSession across RAG chunks." >}}  
 {{< /cards >}}
 
 ## Core Principles

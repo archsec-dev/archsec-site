@@ -64,6 +64,7 @@ System prompts are guidance—not security boundaries. Work through our ordered 
 - **[Part 2: Securing the Model Context Protocol (MCP)](/ai-security/securing-model-context-protocol-mcp/)** — Stop tool poisoning, schema rug pulls, OAuth audience replay, and path traversal with a 4-layer MCP Security Gateway and interactive simulator.
 - **[Part 3: Zero-Trust RAG vs. Indirect Prompt Injection](/ai-security/defending-rag-indirect-prompt-injection/)** — Separate control and data planes using ingestion sanitization, cryptographic Spotlighting, Dual-LLM quarantine, and egress filtering.
 - **[Visual Attack Map: OWASP Top 10 for LLMs &amp; Agentic AI](/ai-security/owasp-llm-agentic-top10-infographic/)** — Visual reference connecting LLM and agentic threat surfaces to architectural and code-level defenses.
+- **[Part 5: PII Redaction Middleware for LLM APIs](/ai-security/pii-redaction-middleware-for-llm-apis)** - PII Redaction Middleware for LLM APIs: Strip Sensitive Data Before Inference Calls
 
 [Start with the AI Security Learning Path →](/ai-security/)
 ---
